@@ -9,6 +9,8 @@
 * PowerShell
 * Python 3.6.1
 * Virtualenv
+* Firefox
+* Selenium 3.4.3
 
 ## Dependencies
 ```
@@ -19,6 +21,10 @@ selenium==3.4.3
 ```
 
 ## 설치
+Firefox 구동을 위해 Geckodriver를 설치합니다
+[https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
+
+
 Windows 10 기준으로 명령어를 적었습니다
 ```
 > git clone https://github.com/DevSusu/DaumCafeCrawler
@@ -33,6 +39,7 @@ Windows 10 기준으로 명령어를 적었습니다
 ```
 
 여기서 `.env`파일을 만들어 줍니다. 여기에는 크롤링에 필요한 정보들을 적습니다
+
 **다음 id,pw는 크롤링하려는 카페에 가입되어있어야 합니다**
 ```
 ID=your_daum_id

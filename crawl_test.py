@@ -51,6 +51,7 @@ class DaumCafeSearch(unittest.TestCase):
             'ID' : os.environ.get("ID"),
             'PW' : os.environ.get("PW"),
             'URL' : os.environ.get("URL"),
+            'GROUP' : os.environ.get("GROUP"),
             'BOARD' : os.environ.get("BOARD"),
         }
 
@@ -101,12 +102,12 @@ class DaumCafeSearch(unittest.TestCase):
         for idx,board_group in enumerate(board_groups):
             try:
                 board_group_header = board_group \
-                                    .find_element_by_link_text('동상이몽 자료실')
+                                    .find_element_by_link_text(self.env['GROUP'])
 
-                # 동상이몽 자료실 찾은 경우
+                # in case board was found
                 boards = board_group.find_elements_by_xpath("//li[@class='icon_board ']")
                 for board in boards:
-                    if board.text in ['도촬 시리즈 2']:
+                    if board.text == self.env['BOARD']:
                         self.crawl_board(board)
 
             except Exception as e:
