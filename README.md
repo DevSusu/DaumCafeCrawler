@@ -11,6 +11,7 @@
 * Virtualenv
 * Firefox
 * Selenium 3.4.3
+* Git
 
 ## Dependencies
 ```
@@ -21,12 +22,14 @@ selenium==3.4.3
 ```
 
 ## 설치
-Firefox 구동을 위해 Geckodriver를 설치합니다
-[https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
+> Windows 10 기준으로 명령어를 적었습니다
 
-
-Windows 10 기준으로 명령어를 적었습니다
+** PowerShell 관리자 권한으로 실행 **
 ```
+(Virtualenv등의 스크립트를 실행시키기 위한 PowerShell 설정)
+> Set-ExecutionPolicy RemoteSigned
+
+> cd path/to/your/workspace
 > git clone https://github.com/DevSusu/DaumCafeCrawler
 > cd DaumCafeCrawler
 > mkdir screenshot
@@ -37,6 +40,9 @@ Windows 10 기준으로 명령어를 적었습니다
 
 > pip install -r requirements.txt
 ```
+
+Firefox 구동을 위해 Geckodriver를 다운받아 해당 폴더에 둡니다
+[https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
 
 여기서 `.env`파일을 만들어 줍니다. 여기에는 크롤링에 필요한 정보들을 적습니다
 
