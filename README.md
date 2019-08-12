@@ -24,7 +24,7 @@ selenium==3.4.3
 ## 설치
 > Windows 10 기준으로 명령어를 적었습니다
 
-** PowerShell 관리자 권한으로 실행 **
+**PowerShell 관리자 권한으로 실행**
 ```
 (Virtualenv등의 스크립트를 실행시키기 위한 PowerShell 설정)
 > Set-ExecutionPolicy RemoteSigned
