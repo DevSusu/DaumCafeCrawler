@@ -1,4 +1,4 @@
 openpyxl==2.4.8
-Pillow==4.2.0
+Pillow==10.0.1
 pypiwin32==220
 selenium==3.4.3
